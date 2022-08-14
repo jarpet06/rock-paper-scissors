@@ -7,11 +7,11 @@ const getComputerChoice = () => {
 const playRound = (playerSelection, computerSelection) => {
     playerSelection = playerSelection.toLowerCase();
 
-    if (playerSelection.charAt(0) === 'r') {
+    if (playerSelection.startsWith('r')) {
         playerSelection = 'rock';
-    } else if (playerSelection.charAt(0) === 'p') {
+    } else if (playerSelection.startsWith('p')) {
         playerSelection = 'paper';
-    } else if (playerSelection.charAt(0) === 's') {
+    } else if (playerSelection.startsWith('s')) {
         playerSelection = 'scissors';
     }
 
